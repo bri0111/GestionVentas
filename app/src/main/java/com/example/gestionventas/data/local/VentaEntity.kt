@@ -2,14 +2,6 @@ package com.example.gestionventas.data.local
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-
-
-
-/**
- * Entidad que representa una venta registrada localmente.
- * Persistida con Room. El campo codigoAutorizacion es UNIQUE
- * para cumplir con la validación de "no duplicado".
- */
 @Entity(
     tableName = "ventas",
     indices = [androidx.room.Index(value = ["codigoAutorizacion"], unique = true)]
