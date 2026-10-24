@@ -3,7 +3,7 @@ package com.example.gestionventas
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import com.example.gestionventas.navigation.AppNav
+import com.example.gestionventas.ui.navigation.AppNav
 
 
 

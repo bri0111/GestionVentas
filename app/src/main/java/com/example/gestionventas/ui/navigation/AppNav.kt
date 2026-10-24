@@ -1,4 +1,4 @@
-package com.example.gestionventas.navigation
+package com.example.gestionventas.ui.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavType
