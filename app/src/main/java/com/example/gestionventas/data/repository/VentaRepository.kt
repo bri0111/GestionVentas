@@ -19,4 +19,7 @@ class VentaRepository(private val dao: VentaDao) {
 
     suspend fun existeCodigo(codigo: String, idExcluir: Long = -1L): Boolean =
         dao.contarPorCodigo(codigo, idExcluir) > 0
+
+    suspend fun eliminar(id: Long)= dao.eliminarPorId(id)
+
 }

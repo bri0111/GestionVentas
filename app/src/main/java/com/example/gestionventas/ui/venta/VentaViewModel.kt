@@ -108,4 +108,9 @@ class VentaViewModel(app: Application) : AndroidViewModel(app) {
             uiState = uiState.copy(guardando = false, guardadoExitosamente = true)
         }
     }
+    fun eliminarVenta(id: Long){
+        viewModelScope.launch {
+            repo.eliminar(id)
+        }
+    }
 }
